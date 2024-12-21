@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# Creates Git configuration file with my settings and prints the current config.
+#
+# Latest revision: 2024-12-21
+#
+# Written and unlicensed by Mikołaj Bartnicki <mikolaj@bartnicki.org>;
+# read LICENSE file for details.
+
+# Exit on first error
+set -e
+
+USER_NAME="Mikołaj Bartnicki"
+USER_EMAIL="github@nikolaos.org"
+CORE_EDITOR="vim"
+PUSH_AUTOSETUPREMOTE="true"
+
+function Main() {
+	git config --global user.name "$USER_NAME"
+	git config --global user.email "$USER_EMAIL"
+	git config --global core.editor "$CORE_EDITOR"
+	git config --global push.autoSetupRemote "$PUSH_AUTOSETUPREMOTE"
+	git config --global --list
+}
+
+Main "$@"
