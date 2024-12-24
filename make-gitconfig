@@ -2,10 +2,10 @@
 
 # Creates Git configuration file with my settings and prints the current config.
 #
-# Latest revision: 2024-12-23
+# Latest revision: 2024-12-24
 #
 # Written and unlicensed by Mikołaj Bartnicki <mikolaj@bartnicki.org>;
-# read LICENSE file for details.
+# please read LICENSE file for details.
 
 # Exit on first error
 set -e
