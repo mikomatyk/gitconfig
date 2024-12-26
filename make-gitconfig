@@ -2,7 +2,7 @@
 
 # Creates Git configuration file with my settings and prints the current config.
 #
-# Latest revision: 2024-12-24
+# Latest revision: 2024-12-26
 #
 # Written and unlicensed by Mikołaj Bartnicki <mikolaj@bartnicki.org>;
 # please read LICENSE file for details.
@@ -25,4 +25,4 @@ function Main() {
 	git config --global --list
 }
 
-Main "$@"
+Main
