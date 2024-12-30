@@ -2,7 +2,7 @@
 
 # Creates Git configuration file with my settings and prints the current config.
 #
-# Latest revision: 2024-12-26
+# Latest revision: 2024-12-30
 #
 # Written and unlicensed by Mikołaj Bartnicki <mikolaj@bartnicki.org>;
 # please read LICENSE file for details.
@@ -10,18 +10,18 @@
 # Exit on first error
 set -e
 
-USER_NAME="Mikołaj Bartnicki"
-USER_EMAIL="github@nikolaos.org"
-CORE_EDITOR="vim"
-CORE_EXCLUDESFILE="~/.gitignore"
-PUSH_AUTOSETUPREMOTE="true"
+userName="Mikołaj Bartnicki"
+userEmail="github@nikolaos.org"
+coreEditor="vim"
+coreExcludesFile="~/.gitignore"
+pushAutoSetupRemote="true"
 
 function Main() {
-	git config --global user.name "$USER_NAME"
-	git config --global user.email "$USER_EMAIL"
-	git config --global core.editor "$CORE_EDITOR"
-	git config --global core.excludesFile "$CORE_EXCLUDESFILE"
-	git config --global push.autoSetupRemote "$PUSH_AUTOSETUPREMOTE"
+	git config --global user.name "$userName"
+	git config --global user.email "$userEmail"
+	git config --global core.editor "$coreEditor"
+	git config --global core.excludesFile "$coreExcludesFile"
+	git config --global push.autoSetupRemote "$pushAutoSetupRemote"
 	git config --global --list
 }
 
